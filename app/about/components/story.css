@@ -1,0 +1,12 @@
+.divider-flag {
+    @apply absolute top-0 left-[15%] sm:left-[30%] bottom-0 w-[1px] bg-secondary
+}
+
+.divider-flag:before {
+    @apply content-[''] block absolute mt-1 w-[17px] h-[17px] -ml-2 rounded-2xl bg-accent opacity-25 z-0
+}
+
+.divider-flag:after {
+    @apply content-[''] block absolute mt-2 w-[9px] h-[9px] -ml-1 rounded-[5px] border-2 border-solid border-accent
+}
+
