@@ -2,7 +2,7 @@
 import {RxCrop, RxDesktop, RxPencil2, RxReader, RxRocket,} from "react-icons/rx";
 
 
-// data
+// data mock
 const serviceData = [
     {
         icon: <RxCrop/>,

@@ -1,5 +1,6 @@
 "use client";
 
+import './about.css'
 import {useState} from "react";
 import Circles from "@/app/components/Circles";
 import {motion} from "framer-motion";
@@ -114,7 +115,7 @@ export default function About() {
                             })}
                         </div>
                         <div
-                            className={'py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-5 items-center xl:items-start'}>
+                            className={'py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-5 items-center xl:items-start overflow-y-auto hover:scrollbar'}>
                             {aboutData[index].infos.map((info, i) => {
                                     if (index == 2) {
                                         return <div key={i}
