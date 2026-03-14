@@ -1,5 +1,15 @@
 import {FaAndroid, FaAws, FaCss3, FaGit, FaHtml5, FaJava, FaJs, FaNodeJs, FaReact} from "react-icons/fa";
-import {SiFirebase, SiFlutter, SiKotlin, SiNextdotjs, SiTailwindcss} from "react-icons/si";
+import {
+    SiFigma,
+    SiFirebase,
+    SiFlutter,
+    SiJetpackcompose,
+    SiJira,
+    SiKotlin,
+    SiNextdotjs,
+    SiSentry,
+    SiTailwindcss
+} from "react-icons/si";
 import {About} from "@/app/model/About";
 
 export const aboutData: About[] = [
@@ -9,9 +19,10 @@ export const aboutData: About[] = [
             {
                 title: 'Android',
                 icons: [
-                    {name: "android", img: FaAndroid},
+                    {name: "kotlin", img: SiKotlin},
                     {name: "java", img: FaJava},
-                    {name: "kotlin", img: SiKotlin}
+                    {name: "android", img: FaAndroid},
+                    {name: "compose", img: SiJetpackcompose},
                 ]
             },
             {
@@ -20,6 +31,14 @@ export const aboutData: About[] = [
                     {name: "react native", img: FaReact},
                     {name: "flutter", img: SiFlutter},
                 ]
+            },
+            {
+                title: 'Backend & Cloud',
+                icons: [
+                    {name: "nodeJs", img: FaNodeJs},
+                    {name: "firebase", img: SiFirebase},
+                    {name: "aws", img: FaAws},
+                ],
             },
             {
                 title: 'Web',
@@ -33,45 +52,43 @@ export const aboutData: About[] = [
                 ],
             },
             {
-                title: 'Backend',
-                icons: [
-                    {name: "nodeJs", img: FaNodeJs},
-                    {name: "ktor", img: SiKotlin},
-                ],
-            },
-            {
                 title: 'Tools',
                 icons: [
                     {name: "git", img: FaGit},
-                    {name: "firebase", img: SiFirebase},
-                    {name: "aws", img: FaAws},
+                    {name: "jira", img: SiJira},
+                    {name: "sentry", img: SiSentry},
+                    {name: "figma", img: SiFigma},
                 ],
             }
         ],
     },
-
     {
         topic: 'experience',
         infos: [
             {
-                title: 'UX/UI Designer - XYZ Company',
-                stage: '2012 - 2023',
+                title: 'Software Engineer Android, LINE MAN Wongnai',
+                stage: 'Feb 2019 - Feb 2026',
             },
             {
-                title: 'Web Developer - ABC Agency',
-                stage: '2010 - 2012',
+                title: 'Android Developer, Radius Co., Ltd',
+                stage: 'Aug 2017 - Jan 2019',
             },
             {
-                title: 'Intern - DEF Corporation',
-                stage: '2008 - 2010',
+                title: 'Android Developer Intern, Digio Thailand Co., Ltd.',
+                stage: 'Jan 2017 - May 2017',
             },
         ],
-    }, {
+    },
+    {
         topic: 'Education',
         infos: [
             {
                 title: 'Mahasarakham University',
-                stage: '2013 - 2016',
+                stage: 'B.S. Computer Science, 2014 - 2017',
+            },
+            {
+                title: 'Khamkhueankeao Chanubhatham School',
+                stage: 'Science-Math, 2010 - 2013',
             }
         ],
     },
@@ -79,35 +96,66 @@ export const aboutData: About[] = [
 
 export const education = [
     {
-        period: "January – May 2017",
-        category: "Cooperative Education",
-        company: "Digio - Thailand Co., Ltd.,",
-        department: "The application is developed for use in collecting customer information conveniently. " +
-            "It is designed to be further developed from the ThaiID application from the original with only data from reading the cards. " +
-            "help to users can create form want and can upload and download form to be used in the more conveniently."
-    },
-    {
-        period: "2013 - 2016",
-        category: "University of Studies",
+        period: "2014 - 2017",
+        category: "University",
         company: "Mahasarakham University",
-        department: "Bachelor of Science in Computer Science, GPA 2.57"
+        department: "Bachelor of Science in Computer Science"
     },
     {
         period: "2016",
-        category: "Activities During Study",
+        category: "Competition",
         company: "ACM-ICPC 2016",
-        department: "Joining ACM-ICPC 2016 Thailand Northeastern Region Programming Contest."
+        department: "Joined ACM-ICPC 2016 Thailand Northeastern Region Programming Contest."
     },
     {
         period: "January 2015",
         category: "C4C",
         company: "C4C 2015",
-        department: "Joining Computer for Community (C4C) camp at ThongThani. School Thawatchaburi district Roied between 8 to 11 January 2015."
+        department: "Joining Computer for Community (C4C) camp at ThongThani School, Thawatchaburi district, Roi Et."
     },
     {
         period: "2010 - 2013",
         category: "High School",
         company: "Khamkhueankeao Chanubhatham School",
-        department: "High School form Khamkhueankeao Chanubhatham GPA 2.86"
+        department: "Science-Mathematics Program"
+    }
+]
+
+export const workExperience = [
+    {
+        period: "Feb 2019 - Feb 2026",
+        category: "Software Engineer Android",
+        company: "LINE MAN Wongnai",
+        department: "LINE MAN App - Ads Team: Spearheaded the Ads module supporting core revenue generation for millions of MAU. Engineered high-precision tracking systems for accurate revenue reporting. Drove transition to Jetpack Compose and MVVM architectures."
+    },
+    {
+        period: "Feb 2019 - Feb 2026",
+        category: "Software Engineer Android",
+        company: "LINE MAN Wongnai",
+        department: "Merchant Solution & POS Ecosystem: Developed \"WnLogger\" integrated with Jitsu SDK for real-time observability across POS hardware. Led security overhaul migrating to Token-based and Assume Role architecture. Developed Serverless Node.js APIs for receipt printing and order synchronization. Took full ownership of FoodStory Digital Display and Checker apps."
+    },
+    {
+        period: "Feb 2019 - Feb 2026",
+        category: "Software Engineer Android",
+        company: "LINE MAN Wongnai",
+        department: "Wongnai Consumer App: Managed large-scale codebases built on Java and MVP architecture. Led incremental migration from Java to Kotlin. Engineered and scaled CRM & Loyalty modules for a massive user base."
+    },
+    {
+        period: "Feb 2019 - Feb 2026",
+        category: "Software Engineer Android",
+        company: "LINE MAN Wongnai",
+        department: "Leadership: Championed RFC process and Pair Programming for technical collaboration. Mentored interns and junior developers with structured training plans and code reviews."
+    },
+    {
+        period: "Aug 2017 - Jan 2019",
+        category: "Android Developer",
+        company: "Radius Co., Ltd",
+        department: "Developed and maintained Android applications for the company's own products as part of an in-house product team. Worked across full development lifecycle from feature design to release, collaborating with product and design teams."
+    },
+    {
+        period: "Jan 2017 - May 2017",
+        category: "Android Developer Intern",
+        company: "Digio Thailand Co., Ltd.",
+        department: "Completed internship focused on Android mobile development, gaining hands-on experience in a professional software environment."
     }
 ]

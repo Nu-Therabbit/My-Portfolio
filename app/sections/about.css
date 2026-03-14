@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    /* ซ่อน scrollbar ปกติ แต่ยัง scroll ได้ */
+    .hover-scrollbar {
+        overflow-y: auto;
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .hover-scrollbar::-webkit-scrollbar {
+        width: 10px;
+        background: transparent;
+    }
+
+    /* hover แล้วค่อยโชว์ */
+    .hover-scrollbar:hover {
+        scrollbar-width: thin; /* Firefox */
+        scrollbar-color: rgba(241, 48, 36, 0.3) transparent;
+    }
+
+    .hover-scrollbar:hover::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .hover-scrollbar:hover::-webkit-scrollbar-track {
+        border-radius: 5px;
+        background: transparent;
+    }
+
+    .hover-scrollbar:hover::-webkit-scrollbar-thumb {
+        @apply bg-accent bg-opacity-30 border-2 border-solid border-accent rounded-md border-opacity-30;
+    }
+
+    .hover-scrollbar:hover::-webkit-scrollbar-thumb:hover {
+        @apply bg-accent bg-opacity-50;
+    }
+}
